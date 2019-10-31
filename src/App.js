@@ -6,9 +6,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={"img/profile-picture.jpg"} className="App-logo" alt="logo" />
+        <img src={profilePicture} className="App-logo" alt="logo" />
         <p>
-          Coming Soon!!!
+          Jaydip Bhakta's profile coming soon!!!
         </p>
       </header>
     </div>
