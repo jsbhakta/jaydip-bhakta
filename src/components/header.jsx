@@ -12,7 +12,7 @@ const Header = props =>
       width="140px"
     />
       <div className="pull-right Header-session">
-        <h6 className="Header-hello">Welcome Guest</h6>
+        <h6 className="Header-hello">Welcome, Guest!</h6>
       </div>
   </header>;
 
