@@ -1,0 +1,22 @@
+.background-img {
+  background: linear-gradient(rgba(200,200,200,.7), rgba(200,200,200,.7));
+  background-size: cover;
+  min-width:100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.home-title-name {
+  font-size: 7em;
+  text-align: center;
+  letter-spacing: 50px;
+  font: italic small-caps bold 50px/80px Georgia, serif;
+}
+
+.home-title-year {
+  font-size: 15em;
+  text-align: center;
+  color: #4b99b1;
+}

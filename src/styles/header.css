@@ -1,0 +1,15 @@
+.Header {
+  display: inline;
+  ackground-color: #f8f9fa!important;
+}
+
+.name {
+  display: inline;
+  margin-right: 1em;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+menu-style {
+  float: right;
+  display: inline;
+}

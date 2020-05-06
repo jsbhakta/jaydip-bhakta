@@ -1,0 +1,11 @@
+/* APP  Styles */
+span + .AppSection {
+  width: 100%;
+  margin-left: 0 !important;
+}
+
+.AppSection {
+  @media (min-width: 768px) {
+    margin-left: 200px;
+  }
+}

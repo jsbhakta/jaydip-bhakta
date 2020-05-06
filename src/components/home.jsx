@@ -1,20 +1,24 @@
 import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { connect } from "react-redux";
 
-import BasePage from "../base-page";
+import '../styles/home.css';
 
 class Home extends Component {
+  render() {
     return (
-      <BasePage pageTitle="Home">
-        <div className="row">
-          <a href="About">About</a>
+      <div>
+        <img className="background-img" alt="homePage" src={require("../img/street.jpg")}/>
+          <div className="home-title-name">
+            Jaydip Bhakta
+          </div>
+        <div className="home-title-year">
+          Welcome!
         </div>
-      </BasePage>
+      </div>
     );
   }
 }
 
 Home.displayName = "Home";
+
 
 export default Home;

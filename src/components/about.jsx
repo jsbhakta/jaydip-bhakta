@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
+import '../styles/about.css';
 
-class About extends Component {
-  render(){
+const About = props => {
+
     return (
-        <div>
-          <h3>About</h3>
-        </div>
+      <div className="About">
+        <h1>About</h1> Comming Soon..
+      </div>
     );
-  }
-}
-
-About.displayName = "About";
+};
 
 export default About;
