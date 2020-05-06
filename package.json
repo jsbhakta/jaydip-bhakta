@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": ">= 4 <= 8",
-    "npm": ">= 3 <= 5"
+    "node": "12.16.0",
+    "npm": "4.6.1"
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
