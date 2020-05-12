@@ -1,6 +1,3 @@
-.About {
-  background-color: LightSteelBlue;
-  background-size: cover;
-  min-width:100%;
-  min-height:100%
+.about-row-container {
+    margin: 5% 5% 5% 10%;
 }
