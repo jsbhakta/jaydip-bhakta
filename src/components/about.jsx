@@ -3,7 +3,9 @@ import "../styles/about.css";
 import ItemBox from "./common/item-box";
 import eduImg from "../img/education.png";
 import workImg from "../img/work.png";
-import personalImg from "../img/personal.png"
+import personalImg from "../img/personal.png";
+import photographyImg from "../img/photography.png";
+
 
 class About extends PureComponent {
   constructor(props) {
@@ -31,6 +33,42 @@ class About extends PureComponent {
       <div>
         {this.renderBackButton()}
         <h1>Education</h1>
+        <table className="table table-bordered table-hover">
+          <thead class="thead-light">
+            <tr>
+              <th>Degree</th>
+              <th>University</th>
+              <th>Year</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>MS in Computer Science</td>
+              <td>Northwestern Polytechnic University</td>
+              <td>April 2018</td>
+              <td>Fremont, CA, USA</td>
+            </tr>
+            <tr>
+              <td>Masters of Science, Corporate Finance </td>
+              <td>Golden Gate University</td>
+              <td>August 2014</td>
+              <td>San Francisco, CA, USA</td>
+            </tr>
+            <tr>
+              <td>Post Graduate Certificate, Financial Planning</td>
+              <td>George Brown College</td>
+              <td>April 2012</td>
+              <td>Toronto, ON, Canada</td>
+            </tr>
+            <tr>
+              <td>Bachelors of Commerce, Accounting & Finance</td>
+              <td>Maharaja Sayajirao University of Baroda</td>
+              <td>April 2009</td>
+              <td>Baroda, GJ, India</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     );
   }
@@ -88,8 +126,8 @@ class About extends PureComponent {
             onClick={this.onItemClick}
             />
           <ItemBox
-            alt=""
-            icon=""
+            alt="Videos/Images"
+            icon={photographyImg}
             name="Videos/Images"
             onClick={this.onItemClick}
             />
