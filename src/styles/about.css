@@ -4,6 +4,10 @@
 
 .back-btn {
   float: right;
-  width: 8%;
+  width: 100px;
   margin: 1%;
+}
+
+.skill-spacing {
+  margin-right: 5em;
 }
