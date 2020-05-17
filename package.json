@@ -10,6 +10,7 @@
     "bootstrap": "^4.4.1",
     "globals": "^13.0.0",
     "react": "^16.11.0",
+    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.11.0",
     "react-favicon": "0.0.18",
     "react-redux": "^7.2.0",

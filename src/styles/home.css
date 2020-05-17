@@ -8,15 +8,29 @@
   z-index: -1;
 }
 
-.home-title-name {
-  font-size: 7em;
-  text-align: center;
-  letter-spacing: 50px;
-  font: italic small-caps bold 50px/80px Georgia, serif;
+.home-title {
+  font-size: 7vw;
+  font: Georgia, serif;
 }
 
 .home-title-year {
   font-size: 15em;
   text-align: center;
   color: #4b99b1;
+}
+
+.img-text-centered {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-text-bottom-right {
+  color: white;
+  position: absolute;
+  bottom: 2%;
+  right: 2%;
+  transform: translate(-50%, -50%);
 }
