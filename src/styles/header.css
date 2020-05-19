@@ -4,6 +4,7 @@
 }
 
 .name {
+  font-size: 3vw;
   width: 50%;
   display: inline;
   margin-right: 1em;
@@ -58,7 +59,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu {
   background: #343a40;
   padding: 2.5em 1.5em 0;
-  font-size: 1.50em;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -76,6 +76,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   display: inline-block;
   margin-top: 10%;
+  font-size: 1.50em;
 }
 
 /* Styling of overlay */
