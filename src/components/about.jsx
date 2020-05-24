@@ -6,6 +6,8 @@ import workImg from "../img/work.png";
 import personalImg from "../img/personal.png";
 import photographyImg from "../img/photography.png";
 
+import SlideShow from "./common/slide-show";
+
 
 class About extends PureComponent {
   constructor(props) {
@@ -154,8 +156,10 @@ class About extends PureComponent {
               <tr>
                 <td><h4>EXPERIENCE:</h4></td>
                 <td>
-                  SUM+IT Enterprises - Sault Ste. Marie, ON, Canada | <i>Feb 2019 – Present</i>
-                  <p>Full Stack Web Developer <i>(Remote)</i></p>
+                  <strong>
+                    SUM+IT Enterprises - Sault Ste. Marie, ON, Canada | <i>Feb 2019 – Present</i>
+                    <p>Full Stack Web Developer <i>(Remote)</i></p>
+                  </strong>
                   <ul>
                     <li>
                       Designe and implemente SUM+IT web application to allow critical parts of the app to handle 1,00+ concurrent requests
@@ -171,8 +175,10 @@ class About extends PureComponent {
                     </li>
                     <li>Create User Authentication with Node.js and MongoDB by setting user roles and their permission</li>
                   </ul>
-                  Northwestern Polytechnic University - Fremont, CA, USA | <i>Sep 2016 – Sept 2017</i>
-                  <p>Career Services Assistant | Graduate Teaching Assistant</p>
+                  <strong>
+                    Northwestern Polytechnic University - Fremont, CA, USA | <i>Sep 2016 – Sept 2017</i>
+                    <p>Career Services Assistant | Graduate Teaching Assistant</p>
+                  </strong>
                   <ul>
                     <li>
                       Provided technical support using Desktop applications including MS Word, MS Excel, Adobe Reader, and Adobe Photoshop
@@ -184,8 +190,10 @@ class About extends PureComponent {
                       Communicating and coordinating with students and companies for career fair event on regular basis
                     </li>
                   </ul>
-                  Northwestern Polytechnic University - Fremont, CA, USA | <i>Jan 2016 – Aug 2016</i>
-                  <p>Lab Instructor</p>
+                  <strong>
+                    Northwestern Polytechnic University - Fremont, CA, USA | <i>Jan 2016 – Aug 2016</i>
+                    <p>Lab Instructor</p>
+                  </strong>
                   <ul>
                     <li>
                       Taught more than 50 graduate students – C++ Object Oriented Programming
@@ -237,11 +245,38 @@ class About extends PureComponent {
   }
 
   renderPhotograpy () {
+    const scenicImgs = [
+      {
+         type: "golden_gate",
+         image: require("../img/pictures/scenic/golden_gate.jpg")
+       },
+       {
+         type: "lake",
+         image: require("../img/pictures/scenic/lake.jpg")
+       },
+       {
+         type: "sea",
+         image: require("../img/pictures/scenic/sea.jpg")
+       },
+       {
+         type: "tree",
+         image: require("../img/pictures/scenic/tree.jpg")
+       },
+       {
+         type: "yosomite",
+         image: require("../img/pictures/scenic/yosomite.jpg")
+       },
+    ];
     return (
       <div>
         {this.renderBackButton()}
         <h1>Images/Video</h1>
         <i>Coming Soon...</i>
+        <br/>
+        <div>
+          <SlideShow slideImages={scenicImgs}/>
+        </div>
+
       </div>
     );
   }
@@ -283,7 +318,6 @@ class About extends PureComponent {
 
   render() {
     const { selectedDetail } = this.state;
-    console.log(selectedDetail);
     if (selectedDetail === "Education") {
       return this.renderEducatiion();
     } else if (selectedDetail === "Work Experience") {

@@ -4,10 +4,8 @@
 }
 
 .name {
-  font-size: 3vw;
-  width: 50%;
+  font-size: 4vw;
   display: inline;
-  margin-right: 1em;
   font-family: "Lucida Console", Courier, monospace;
 }
 
@@ -76,7 +74,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-item {
   display: inline-block;
   margin-top: 10%;
-  font-size: 1.50em;
+  font-size: 3em;
 }
 
 /* Styling of overlay */
