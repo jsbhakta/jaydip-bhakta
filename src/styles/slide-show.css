@@ -1,0 +1,11 @@
+.slide-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 2%;
+  text-align: center;
+}
+
+ .image-container {
+  width: 100%;
+  display: inline-block;
+}

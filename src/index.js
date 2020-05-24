@@ -13,11 +13,9 @@ import Footer from "./components/footer";
 const routing = (
   <Router>
     <Header/>
-    <div>
-      <Route exact path="/" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-    </div>
+    <Route exact path="/" component={Home} />
+    <Route path="/about" component={About} />
+    <Route path="/contact" component={Contact} />
     <Footer/>
   </Router>
 );

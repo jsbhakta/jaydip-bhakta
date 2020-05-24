@@ -6,6 +6,8 @@ import workImg from "../img/work.png";
 import personalImg from "../img/personal.png";
 import photographyImg from "../img/photography.png";
 
+import SlideShow from "./common/slide-show";
+
 
 class About extends PureComponent {
   constructor(props) {
@@ -110,25 +112,25 @@ class About extends PureComponent {
                 <td>
                   <ul>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Web Development:</strong>React.js, JavaScript, Node.js, Bootstrap, HTML5 and CSS
+                      <strong className="col-sm-2">Web Development:</strong>React.js, JavaScript, Node.js, Bootstrap, HTML5 and CSS
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Programing Languages: </strong>Python, Scala, C++, Java, XML and R
+                      <strong className="col-sm-2">Programing Languages: </strong>Python, Scala, C++, Java, XML and R
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Scripting Languages: </strong>Shell, Perl
+                      <strong className="col-sm-2">Scripting Languages: </strong>Shell, Perl
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Database: </strong>MySQL/SQL, MongoDB,
+                      <strong className="col-sm-2">Database: </strong>MySQL/SQL, MongoDB,
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Tools: </strong>Xcode, Sublime, Atom, Visual Studio,
+                      <strong className="col-sm-2">Tools: </strong>Xcode, Sublime, Atom, Visual Studio,
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Application: </strong>TIBCO, git, Git Hub Adobe Photoshop; Flash,
+                      <strong className="col-sm-2">Application: </strong>TIBCO, git, Git Hub Adobe Photoshop; Flash,
                     </li>
                     <li className="row text-right">
-                      <strong className="col-sm-3">Operating System: </strong>Windows, macOS, Android, Linux
+                      <strong className="col-sm-2">Operating System: </strong>Windows, macOS, Android, Linux
                     </li>
                   </ul>
                 </td>
@@ -154,35 +156,58 @@ class About extends PureComponent {
               <tr>
                 <td><h4>EXPERIENCE:</h4></td>
                 <td>
-                    Northwestern Polytechnic University - Fremont, CA Sep 2016 – Sept 2017
+                  <strong>
+                    SUM+IT Enterprises - Sault Ste. Marie, ON, Canada | <i>Feb 2019 – Present</i>
+                    <p>Full Stack Web Developer <i>(Remote)</i></p>
+                  </strong>
+                  <ul>
+                    <li>
+                      Designe and implemente SUM+IT web application to allow critical parts of the app to handle 1,00+ concurrent requests
+                    </li>
+                    <li>
+                        Improve front-end by replacing it with ReactJS, Node.js, Bootstrap for faster loading of heavy data
+                    </li>
+                    <li>
+                      Wrok with team of 5 people, Founder, Developers and Investors
+                    </li>
+                    <li>
+                      Maintain and configure MongoDB instances to achieve maximum performance and availability
+                    </li>
+                    <li>Create User Authentication with Node.js and MongoDB by setting user roles and their permission</li>
+                  </ul>
+                  <strong>
+                    Northwestern Polytechnic University - Fremont, CA, USA | <i>Sep 2016 – Sept 2017</i>
                     <p>Career Services Assistant | Graduate Teaching Assistant</p>
-                    <ul>
-                      <li>
-                        Provided technical support using Desktop applications including MS Word, MS Excel, Adobe Reader, and Adobe Photoshop
-                      </li>
-                      <li>
-                        Organizing and managing career department events
-                      </li>
-                      <li>
-                        Communicating and coordinating with students and companies for career fair event on regular basis
-                      </li>
-                    </ul>
-                    Northwestern Polytechnic University - Fremont, CA Jan 2016 – Aug 2016
+                  </strong>
+                  <ul>
+                    <li>
+                      Provided technical support using Desktop applications including MS Word, MS Excel, Adobe Reader, and Adobe Photoshop
+                    </li>
+                    <li>
+                      Organizing and managing career department events
+                    </li>
+                    <li>
+                      Communicating and coordinating with students and companies for career fair event on regular basis
+                    </li>
+                  </ul>
+                  <strong>
+                    Northwestern Polytechnic University - Fremont, CA, USA | <i>Jan 2016 – Aug 2016</i>
                     <p>Lab Instructor</p>
-                    <ul>
-                      <li>
-                        Taught more than 50 graduate students – C++ Object Oriented Programming
-                      </li>
-                      <li>
-                        Designed grading rubrics and course activities including Lab Assignments, Quizzes and Exams
-                      </li>
-                      <li>
-                        Coordinated with the class instructor to get suggestion and recommendation on lab material
-                      </li>
-                      <li>
-                        Taught to write optimize code and test security and quality control of the software
-                      </li>
-                    </ul>
+                  </strong>
+                  <ul>
+                    <li>
+                      Taught more than 50 graduate students – C++ Object Oriented Programming
+                    </li>
+                    <li>
+                      Designed grading rubrics and course activities including Lab Assignments, Quizzes and Exams
+                    </li>
+                    <li>
+                      Coordinated with the class instructor to get suggestion and recommendation on lab material
+                    </li>
+                    <li>
+                      Taught to write optimize code and test security and quality control of the software
+                    </li>
+                  </ul>
                 </td>
               </tr>
               <tr>
@@ -220,11 +245,38 @@ class About extends PureComponent {
   }
 
   renderPhotograpy () {
+    const scenicImgs = [
+      {
+         type: "golden_gate",
+         image: require("../img/pictures/scenic/golden_gate.jpg")
+       },
+       {
+         type: "lake",
+         image: require("../img/pictures/scenic/lake.jpg")
+       },
+       {
+         type: "sea",
+         image: require("../img/pictures/scenic/sea.jpg")
+       },
+       {
+         type: "tree",
+         image: require("../img/pictures/scenic/tree.jpg")
+       },
+       {
+         type: "yosomite",
+         image: require("../img/pictures/scenic/yosomite.jpg")
+       },
+    ];
     return (
       <div>
         {this.renderBackButton()}
         <h1>Images/Video</h1>
         <i>Coming Soon...</i>
+        <br/>
+        <div>
+          <SlideShow slideImages={scenicImgs}/>
+        </div>
+
       </div>
     );
   }
@@ -266,7 +318,6 @@ class About extends PureComponent {
 
   render() {
     const { selectedDetail } = this.state;
-    console.log(selectedDetail);
     if (selectedDetail === "Education") {
       return this.renderEducatiion();
     } else if (selectedDetail === "Work Experience") {
