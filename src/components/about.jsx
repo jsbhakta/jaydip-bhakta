@@ -5,6 +5,7 @@ import eduImg from "../img/education.png";
 import workImg from "../img/work.png";
 import personalImg from "../img/personal.png";
 import photographyImg from "../img/photography.png";
+import profilePic from "../img/profile-pic.jpg";
 
 import SlideShow from "./common/slide-show";
 
@@ -236,10 +237,18 @@ class About extends PureComponent {
 
   renderPersonal () {
     return (
-      <div>
+      <div className="container">
         {this.renderBackButton()}
         <h1>Personal</h1>
-        <i>Coming Soon...</i>
+        <div className="row">
+          <div className="col-xs-3">
+            <img
+            className="profile-pic"
+            src={profilePic}
+            alt={"profile-pic"}
+            />
+          </div>
+        </div>
       </div>
     );
   }
@@ -271,12 +280,10 @@ class About extends PureComponent {
       <div>
         {this.renderBackButton()}
         <h1>Images/Video</h1>
-        <i>Coming Soon...</i>
         <br/>
         <div>
           <SlideShow slideImages={scenicImgs}/>
         </div>
-
       </div>
     );
   }

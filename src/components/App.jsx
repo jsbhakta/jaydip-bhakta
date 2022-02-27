@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component }  from 'react';
 
 import Home from "./home";
 import '../styles/base.css';

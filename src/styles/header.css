@@ -2,11 +2,19 @@
   width: 100%;
   background-color: #343a40;
 }
-
+.logo {
+  width: 70px;
+  margin-bottom: 1.5%;
+}
 .name {
   font-size: 4vw;
   display: inline;
+  color: beige;
   font-family: "Lucida Console", Courier, monospace;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 .menu-style {
@@ -25,12 +33,12 @@
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: white;
+  background: beige;
 }
 
 /* Color/shape of burger icon bars on hover*/
 .bm-burger-bars-hover {
-  background: green;
+  background: #86ecf0;
 }
 
 /* Position and sizing of clickable cross button */
@@ -51,6 +59,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-menu-wrap {
   position: fixed;
   height: 100%;
+  width: 200Px;
 }
 
 /* General sidebar styles */
@@ -66,15 +75,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #b8b7ad;
-  padding: 0.8em;
+  color: #86ecf0;
+  padding: 3em;
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
-  margin-top: 10%;
+  margin-top: 20%;
   font-size: 3em;
+  color: #86ecf0;
 }
 
 /* Styling of overlay */
